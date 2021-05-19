@@ -13,6 +13,8 @@ for file_name in dirs:
 	for line in f:
 		tok = sp.EncodeAsPieces(line.strip())[:256]
 		fout.write('{}\n'.format(" ".join(tok)))
+
+print("Done dealing NTG")
 		
 
 dirs = os.listdir('finetune_data/QG')
@@ -24,3 +26,5 @@ for file_name in dirs:
 	for line in f:
 		tok = sp.EncodeAsPieces(line.strip())[:256]
 		fout.write('{}\n'.format(" ".join(tok)))
+
+print("Done dealing QG")
