@@ -3,7 +3,7 @@
 #tar -zxvf xglue_full_dataset.tar.gz
 #mv xglue_full_dataset finetune_data
 mkdir ./finetune_data/NTG_tokenized
-#mkdir ./finetune_data/QG_tokenized
+mkdir ./finetune_data/QG_tokenized
 
 python xprophetnet_tokenize.py
 
