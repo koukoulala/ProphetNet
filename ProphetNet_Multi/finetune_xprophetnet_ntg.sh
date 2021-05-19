@@ -14,7 +14,7 @@ fairseq-train \
 	--dropout 0.1 --attention-dropout 0.1 --weight-decay 0.01 \
 	--criterion $CRITERION --label-smoothing 0.1 \
 	--update-freq 32  --max-sentences 8 \
-	--num-workers 4 --load-from-pretrained-model $PRETRAINED_MODEL \
+	--num-workers 2 --load-from-pretrained-model $PRETRAINED_MODEL \
 	--ddp-backend=no_c10d --max-epoch 20 \
 	--max-source-positions 512 --max-target-positions 512 \
 	--skip-invalid-size-inputs-valid-test \
